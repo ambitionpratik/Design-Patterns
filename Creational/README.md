@@ -38,5 +38,19 @@ The Factory Design Pattern is a creational pattern that abstracts the process of
 - Switching logic (if-else or switch) can grow large — consider Factory Registry or Abstract Factory in that case
 
 # Abstract Factory
+The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+**Components of Abstract Factory**
+- AbstractFactory	- Declares creation methods for product families
+- ConcreteFactory	- Implements creation methods for specific product variants
+- AbstractProduct	- Interface for a type of product
+- ConcreteProduct	- A Specific implementation of a product
+- Client - Uses the factory to create products without knowing their concrete types
+
+**Real-World Analogy**
+A GUI toolkit supports different operating systems. Each OS has its own versions of buttons and scrollbars.
+The abstract factory ensures you create compatible sets (e.g., WinButton + WinScrollbar or MacButton + MacScrollbar).
+
+
 # Builder
 # Prototype
