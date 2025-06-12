@@ -51,6 +51,26 @@ The Abstract Factory pattern provides an interface for creating families of rela
 A GUI toolkit supports different operating systems. Each OS has its own versions of buttons and scrollbars.
 The abstract factory ensures you create compatible sets (e.g., WinButton + WinScrollbar or MacButton + MacScrollbar).
 
-
 # Builder
+The Builder Design Pattern is a creational design pattern that separates the construction of a complex object from its representation so that the same construction process can create different representations.
+
+**When to Use Builder Pattern:**
+- When the creation of an object involves many steps or configurations.
+- When you want to construct different representations of the same type of object.
+- When constructors with many parameters become hard to manage (especially optional ones).
+
+**Participants in the Builder Pattern:**
+- Product: The complex object under construction.
+- Builder: Abstract interface to define steps for building the product.
+- ConcreteBuilder: Implements the builder interface and provides specific parts of the product.
+- Director: Controls the building process using a builder.
+- Client: Uses the director and builder to create the product.
+
+**Advantages of Builder Pattern:**
+- Better control over the construction process.
+- Supports different representations of an object.
+- Avoids telescoping constructor anti-pattern.
+- Encapsulates the building logic in separate builder classes.
+
+
 # Prototype
