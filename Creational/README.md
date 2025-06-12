@@ -1,6 +1,6 @@
 Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
-#Singleton
+# Singleton
 The Singleton Design Pattern ensures that only one instance of a class is created and provides a global point of access to that instance.
 
 **Key Characteristics of Singleton:**
@@ -18,7 +18,7 @@ The Singleton Design Pattern ensures that only one instance of a class is create
 - Can hide dependencies.
 - May lead to tight coupling.
 
-- **Factory**
-- **Abstract Factory**
-- **Builder**
-- **Prototype**
+# Factory
+# Abstract Factory
+# Builder
+# Prototype
