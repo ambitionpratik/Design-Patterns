@@ -12,11 +12,11 @@ The most universal and high-level patterns are architectural patterns. Developer
 
 In addition, all patterns can be categorized by their intent or purpose. This book covers three main groups of patterns:
 
-**Creational patterns** provide object creation mechanisms that increase flexibility and reuse of existing code.
+- **Creational patterns** provide object creation mechanisms that increase flexibility and reuse of existing code.
 
-**Structural patterns** explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
+- **Structural patterns** explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
 
-**Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
+- **Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
 
 
 Note: All the design pattern implementations using C++
