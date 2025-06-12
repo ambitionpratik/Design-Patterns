@@ -19,6 +19,24 @@ The Singleton Design Pattern ensures that only one instance of a class is create
 - May lead to tight coupling.
 
 # Factory
+The Factory Design Pattern is a creational pattern that abstracts the process of object creation. Instead of instantiating objects directly using new, you delegate this responsibility to a factory class or method.
+
+**When to Use the Factory Pattern**
+- When the exact type of object is determined at runtime.
+- When you want to decouple object creation from usage.
+- When the object creation process is complex or repetitive.
+- When a class can't anticipate which subclass to instantiate.
+
+**Components of Factory Pattern**
+- Product Interface (Abstract Class or Base Class)
+- Concrete Products (Derived Classes)
+- Factory (Creates and returns the correct product)
+- Client (Uses the factory to create products)
+
+**Disadvantages**
+- May introduce extra classes and complexity
+- Switching logic (if-else or switch) can grow large — consider Factory Registry or Abstract Factory in that case
+
 # Abstract Factory
 # Builder
 # Prototype
