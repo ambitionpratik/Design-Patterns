@@ -74,3 +74,29 @@ The Builder Design Pattern is a creational design pattern that separates the con
 
 
 # Prototype
+The Prototype Design Pattern is a creational pattern that allows you to create new objects by copying an existing object, known as the prototype, instead of creating from scratch using constructors.
+
+**Intent:**
+- Create new objects by copying existing ones, instead of instantiating new objects directly. It helps improve performance when object creation is expensive.
+
+**Use Cases:**
+- When object creation is costly (e.g., database operations, network fetch).
+- When you want to keep object creation logic hidden.
+- When you want to create clones of objects at runtime.
+
+**Structure:**
+- Prototype (interface): Declares a clone() method.
+- ConcretePrototype: Implements the clone() method.
+- Factory: Holds constructed objects
+- Client: Clones objects using the prototype interface.
+
+**Advantages of Prototype Pattern:**
+- Avoids costly object creation.
+- Cloning can be faster than creating a new object via constructor.
+- Reduces subclassing and factory logic.
+- Easy to add or remove new prototypes at runtime.
+
+**Caveats:**
+- Deep copy vs shallow copy complexity.
+- Object graph with circular references may require careful handling.
+- Requires careful implementation of clone() to avoid slicing and memory issues.
