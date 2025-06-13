@@ -52,6 +52,25 @@ A GUI toolkit supports different operating systems. Each OS has its own versions
 The abstract factory ensures you create compatible sets (e.g., WinButton + WinScrollbar or MacButton + MacScrollbar).
 
 # Builder
+Used for building complex objects.
+Our understanding:
+Builder has basically three components:
+1.Director : 
+who knows the sequence of procedure and can directer a builder in that sequence.
+
+2.Builder:
+builder is the one who actually build the product,builder has the knowledge of the what is to be done in each procedure.
+builder creates the skeletal of product during it's construction and then build the entire product in sequence directed by director.
+
+3.Actual product.
+exposes setters for builder to set with right ingridients.
+
+so in escense:
+we create a builder with skeleton product , pass it to builder , director receive the builder and starts call upon build methods of builder in sequence.
+at last we can ask the builder to give the built project.
+
+
+
 The Builder Design Pattern is a creational design pattern that separates the construction of a complex object from its representation so that the same construction process can create different representations.
 
 **When to Use Builder Pattern:**
