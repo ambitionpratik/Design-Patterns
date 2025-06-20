@@ -28,6 +28,8 @@ Think of undo in a text editor. Every time you make a change, the app saves the 
 
 **Participants**
 Originator – The object whose state needs to be saved/restored.
+
 Memento – A value object that stores the state of the Originator.
+
 Caretaker – Manages and keeps track of Mementos (but doesn’t modify or examine them).
 
