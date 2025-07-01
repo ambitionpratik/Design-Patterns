@@ -34,3 +34,30 @@ Memento – A value object that stores the state of the Originator.
 
 Caretaker – Manages and keeps track of Mementos (but doesn’t modify or examine them).
 
+# Command
+Command is a behavioral design pattern that converts requests or simple operations into objects.
+
+**What is the Command Pattern?**
+
+The Command Pattern encapsulates a request as an object, allowing you to:
+
+- Parameterize clients with different requests
+- Queue or log requests
+- Support undoable operations
+
+It decouples the object that invokes the operation from the one that performs it.
+
+**Real-World Analogy**
+
+Think of a remote control (Invoker) that sends a command (e.g., turn on/off) to a device (Receiver like a TV). The remote doesn’t know how the device works internally — it just sends a request.
+
+**Command Pattern Participants**
+
+| Role              | Responsibility                                     |
+| ----------------- | -------------------------------------------------- |
+| `Command`         | Abstract interface for executing an operation      |
+| `ConcreteCommand` | Implements the command interface                   |
+| `Receiver`        | The object that performs the actual work           |
+| `Invoker`         | Triggers the command                               |
+| `Client`          | Creates command objects and configures the invoker |
+
