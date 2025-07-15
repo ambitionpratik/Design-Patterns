@@ -72,3 +72,37 @@ You want to define the outline of an operation, but let subclasses redefine cert
 Useful for code reuse and enforcing consistency in workflow logic.
 
 You want to avoid duplicate code across related classes with only slight variations.
+
+# Chain of Responsibility(COR)
+
+The Chain of Responsibility (CoR) is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler either handles it or passes it to the next handler in the chain.
+
+**Intent**
+
+Avoid coupling the sender of a request to its receiver by giving multiple objects a chance to handle the request.
+
+**When to Use**
+
+When multiple objects might handle a request, and you don't want to hardcode the receiver.
+
+When you want to decouple the sender and receiver.
+
+When you're implementing processing pipelines, logging, UI event handling, etc.
+
+**Client → Handler1 → Handler2 → Handler3 → (null)**
+
+Each handler decides:
+
+If it can handle the request → it processes it.
+
+Otherwise, → passes it to the next handler.
+
+**Advantages**
+
+| Benefit     | Description                                 |
+| ----------- | ------------------------------------------- |
+| Decoupling  | The Sender doesn't know who handles the request |
+| Flexibility | Handlers can be added/removed dynamically   |
+| Scalability | Chain can grow or shrink as needed          |
+
+
