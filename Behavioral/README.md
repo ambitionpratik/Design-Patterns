@@ -61,3 +61,14 @@ Think of a remote control (Invoker) that sends a command (e.g., turn on/off) to 
 | `Invoker`         | Triggers the command                               |
 | `Client`          | Creates command objects and configures the invoker |
 
+# Template
+
+The Template Method pattern is a behavioral design pattern that defines the skeleton of an algorithm in a base class and lets subclasses override specific steps without changing the overall algorithm structure.
+
+**When to Use**
+
+You want to define the outline of an operation, but let subclasses redefine certain steps.
+
+Useful for code reuse and enforcing consistency in workflow logic.
+
+You want to avoid duplicate code across related classes with only slight variations.
