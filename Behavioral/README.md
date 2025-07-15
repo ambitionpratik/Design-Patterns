@@ -67,11 +67,11 @@ The Template Method pattern is a behavioral design pattern that defines the skel
 
 **When to Use**
 
-You want to define the outline of an operation, but let subclasses redefine certain steps.
+- You want to define the outline of an operation, but let subclasses redefine certain steps.
 
-Useful for code reuse and enforcing consistency in workflow logic.
+- Useful for code reuse and enforcing consistency in workflow logic.
 
-You want to avoid duplicate code across related classes with only slight variations.
+- You want to avoid duplicate code across related classes with only slight variations.
 
 # Chain of Responsibility(COR)
 
@@ -83,15 +83,15 @@ Avoid coupling the sender of a request to its receiver by giving multiple object
 
 **When to Use**
 
-When multiple objects might handle a request, and you don't want to hardcode the receiver.
+- When multiple objects might handle a request, and you don't want to hardcode the receiver.
 
-When you want to decouple the sender and receiver.
+- When you want to decouple the sender and receiver.
 
-When you're implementing processing pipelines, logging, UI event handling, etc.
+- When you're implementing processing pipelines, logging, UI event handling, etc.
 
 **Client → Handler1 → Handler2 → Handler3 → (null)**
 
-Each handler decides:
+- Each handler decides:
 
 If it can handle the request → it processes it.
 
