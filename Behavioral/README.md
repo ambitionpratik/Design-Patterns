@@ -91,11 +91,11 @@ Avoid coupling the sender of a request to its receiver by giving multiple object
 
 **Client → Handler1 → Handler2 → Handler3 → (null)**
 
-- Each handler decides:
+Each handler decides:
 
-If it can handle the request → it processes it.
+- If it can handle the request → it processes it.
 
-Otherwise, → passes it to the next handler.
+- Otherwise, → passes it to the next handler.
 
 **Advantages**
 
