@@ -1,5 +1,6 @@
 #include <iostream>
 
+// Abstract class
 class DataExporter {
 public:
     void Export() {
@@ -17,6 +18,7 @@ protected:
     }
 };
 
+// Concrete class
 class CSVExporter : public DataExporter {
 protected:
     void LoadData() override {
@@ -28,6 +30,7 @@ protected:
     }
 };
 
+// Concrete class
 class JSONExporter : public DataExporter {
 protected:
     void LoadData() override {
@@ -39,6 +42,7 @@ protected:
     }
 };
 
+// Client code
 int main() {
     DataExporter* exporter = new CSVExporter();
     exporter->Export();
